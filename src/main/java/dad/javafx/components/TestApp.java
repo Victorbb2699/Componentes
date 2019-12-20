@@ -12,16 +12,18 @@ public class TestApp extends Application {
 
 		
 		
-		ListSelector<String> listSelector = new ListSelector<>();
-		listSelector.setLeftTitle("Jugadores");
-		listSelector.setRightTitle("Participantes");
-		listSelector.getLeftItems().addAll("Perico");
-		listSelector.getLeftItems().addAll("Palotes");
-		listSelector.getLeftItems().addAll("Menganita");
-		listSelector.getLeftItems().addAll("Fulanito");
+//		ListSelector<String> listSelector = new ListSelector<>();
+//		listSelector.setLeftTitle("Jugadores");
+//		listSelector.setRightTitle("Participantes");
+//		listSelector.getLeftItems().addAll("Perico");
+//		listSelector.getLeftItems().addAll("Palotes");
+//		listSelector.getLeftItems().addAll("Menganita");
+//		listSelector.getLeftItems().addAll("Fulanito");
 
+		DateChooser dateChooser = new DateChooser();
+		
 		BorderPane root = new BorderPane();
-		root.setCenter(listSelector);
+		root.setCenter(dateChooser);
 		
 
 		Scene scene = new Scene(root, 320, 200);
